@@ -8,12 +8,12 @@ private static Logger logger = Logger.getLogger(TryCatchFinallySample2.class.get
 		logger.setLevel(Level.ALL);
 
 		try {
-			logger.warning("WARNING");
+			logger.warning("try");
 			Integer.parseInt(args[0]);
 		} catch (Exception e) {
-			logger.severe("SEVERE");
+			logger.severe("catch");
 		} finally {
-			logger.info("INFO");
+			logger.info("finally");
 		}
 	}
 }
